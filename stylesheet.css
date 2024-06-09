@@ -364,11 +364,11 @@ section {
 }
 
 .Technical-bars .bar:nth-child(2) .progress-line span {
-    width: 30%;
+    width: 77%;
 }
 
 .Technical-bars .bar:nth-child(3) .progress-line span {
-    width: 10%;
+    width: 85%;
 }
 
 .Technical-bars .bar:nth-child(4) .progress-line span {
@@ -379,103 +379,15 @@ section {
     width: 90%;
 }
 
-/* Professional skills styles */
-.radial-bars {
-    width: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+.read:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 30px cyan, 0 0 45px cyan,
+        0 0 105px cyan, 0 0 200px cyan;
 }
 
-.radial-bars .radial-bars{
-    width: 50%;
-    height: 170px;
-    margin-bottom: 10px;
-    position: relative;
+.services-list div:hover {
+    transform: translateY(-10px);
 }
-.radial-bars .radial-bars svg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    width: 120px;
-    height: 160px;
-}
-.radial-bars .radial-bars .progress-bar{
-    stroke-width: 10;
-    stop-color: 10;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-    animation: animate-bar 1s linear forwards;
-}
-
-.path{
-    stroke-width: 10;
-    stroke: #0ef;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-}
-.path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path2 1s 1s linear forwards;}
-.path-3{animation: animate-path3 1s 1s linear forwards;}
-.path-4{animation: animate-path4 1s 1s linear forwards;}
-
-@keyframes animate-bar{
-    100%{
-        stroke-dashoffset: -1;
-    }
-}
-@keyframes animate-path1{
-    100%{
-        stroke-dashoffset: 50;
-    }
-}
-@keyframes animate-path2{
-    100%{
-        stroke-dashoffset: 175;
-    }
-}
-@keyframes animate-path3{
-    100%{
-        stroke-dashoffset: 125;
-    }
-}
-@keyframes animate-path4{
-    100%{
-        stroke-dashoffset: 75;
-    }
-}
-.radial-bar .percentage{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-.radial-bar .text{
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50px);
-    font-size: 17px;
-    font-weight: 500;
-    
-
-}
-
-
-
-
 
 
 /* Keyframes */
